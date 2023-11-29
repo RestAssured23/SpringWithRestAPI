@@ -39,5 +39,6 @@ public class ExtendReporterManager {
     }
     public static void logWarningDetails(String log){
         Setup.extentTestThreadLocal.get().warning(MarkupHelper.createLabel(log, ExtentColor.YELLOW));
+        System.out.println("test");
     }
 }
