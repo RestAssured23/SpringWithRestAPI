@@ -1,9 +1,8 @@
-package com.example.springrest.Reporting;
+package com.example.springrest.reporting;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.aventstack.extentreports.reporter.ExtentReporter;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
@@ -40,5 +39,6 @@ public class ExtendReporterManager {
     }
     public static void logWarningDetails(String log){
         Setup.extentTestThreadLocal.get().warning(MarkupHelper.createLabel(log, ExtentColor.YELLOW));
+
     }
 }

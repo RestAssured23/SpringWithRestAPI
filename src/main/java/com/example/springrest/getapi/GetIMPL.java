@@ -20,7 +20,7 @@ import static io.restassured.RestAssured.given;
 public class GetIMPL implements GetDAO {
     @Autowired
     private GetBO getBO;
-    private String acctoken;
+    public String acctoken;
     private static RequestSpecification req;
     private static ResponseSpecification respec;
 
